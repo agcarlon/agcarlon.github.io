@@ -3,63 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <title>André Gustavo Carlon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
+    :root {
+      --accent: #0066cc;
+      --bg: #f9fafc;
+      --text: #222;
     }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.25rem;
     }
+
     header img {
       border-radius: 50%;
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
+      flex-shrink: 0;
     }
+
     h1 {
       margin: 0;
+      font-size: 2rem;
+      color: var(--accent);
     }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    h3.subhead {
+      margin: 0.75rem 0 0.25rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
     ul.fields {
-      margin-top: 0.5rem;
+      margin: 0;
+      padding-left: 1rem;
       list-style: square;
     }
-    section.papers {
+
+    ul.fields li {
+      margin: 0.25rem 0;
+    }
+
+    section.about {
       margin-top: 1.5rem;
     }
+
     section.papers ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
+
     section.papers li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding-left: 1.25rem;
+    }
+
+    section.papers li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    a.doi {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.doi:hover {
+      color: var(--accent);
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <h1>André Gustavo Carlon</h1>
-      <p>MATH4UQ, RWTH Aachen University</p>
-      <ul class="fields">
-        <li>Optimal Experimental Design (OED)</li>
-        <li>Stochastic Gradient Descent (SGD)</li>
-        <li>Reliability Engineering</li>
-      </ul>
-    </div>
-    <img src="profile.jpg" alt="Profile photo">
-  </header>
+  <div class="card">
+    <header>
+      <div>
+        <h1>André Gustavo Carlon</h1>
+        <p>MATH4UQ, RWTH Aachen University</p>
+        <h3 class="subhead">Interests</h3>
+        <ul class="fields">
+          <li>Optimal Experimental Design</li>
+          <li>Stochastic Gradient Descent</li>
+          <li>Reliability Engineering</li>
+        </ul>
+      </div>
+      <img src="profile.jpg" alt="Profile photo">
+    </header>
 
-  <section class="papers">
-    <h2>Selected Publications</h2>
-    <ul>
-      <li>2024 — <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi‑Newton methods in stochastic optimization.</em> <strong>Optimization Methods and Software</strong>, DOI: 10.1080/10556788.2024.2339226</li>
-      <li>2022 — <em>Risk optimization using the Chernoff bound and stochastic gradient descent.</em> <strong>Reliability Engineering &amp; System Safety</strong>, 223, 108512</li>
-      <li>2020 — <em>Nesterov‑aided stochastic gradient methods using Laplace approximation for Bayesian design optimization.</em> <strong>Computer Methods in Applied Mechanics and Engineering</strong>, 363, 112909</li>
-      <li>2019 — <em>A stochastic gradient approach for the reliability maximization of passively controlled structures.</em> <strong>Engineering Structures</strong>, 186, 1‑12</li>
-    </ul>
-  </section>
+    <section class="about">
+      <p>I'm André Gustavo Carlon, a postdoctoral researcher and stochastic-optimization enthusiast with a Ph.D. in uncertainty quantification. My work sits at the intersection of statistical methodology and real-world applications: I develop and analyze novel stochastic-gradient techniques—variance reduction, optimal preconditioning—to tackle problems in optimal experimental design, reliability-based design optimization, and efficient training of machine-learning models. I also serve as an Associate Editor for <em>Statistics and Computing</em>.</p>
+    </section>
+
+    <section class="papers">
+      <h2>Selected Publications</h2>
+      <ul>
+        <li><strong>2024</strong> — <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi-Newton methods in stochastic optimization.</em> <span class="journal">Optimization Methods and Software</span>, <a class="doi" href="https://doi.org/10.1080/10556788.2024.2339226" target="_blank" rel="noopener noreferrer">DOI:10.1080/10556788.2024.2339226</a></li>
+        <li><strong>2022</strong> — <em>Risk optimization using the Chernoff bound and stochastic gradient descent.</em> <span class="journal">Reliability Engineering &amp; System Safety</span>, 223, 108512, <a class="doi" href="https://doi.org/10.1016/j.ress.2022.108512" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.ress.2022.108512</a></li>
+        <li><strong>2020</strong> — <em>Nesterov-aided stochastic gradient methods using Laplace approximation for Bayesian design optimization.</em> <span class="journal">Computer Methods in Applied Mechanics and Engineering</span>, 363, 112909, <a class="doi" href="https://doi.org/10.1016/j.cma.2020.112909" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.cma.2020.112909</a></li>
+        <li><strong>2019</strong> — <em>A stochastic gradient approach for the reliability maximization of passively controlled structures.</em> <span class="journal">Engineering Structures</span>, 186, 1–12, <a class="doi" href="https://doi.org/10.1016/j.engstruct.2019.01.121" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.engstruct.2019.01.121</a></li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
