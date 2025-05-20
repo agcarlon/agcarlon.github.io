@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications – André G. Carlon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #0066cc;
+      --bg: #f9fafc;
+      --text: #222;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    section.papers ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    section.papers li {
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 1.25rem;
+    }
+
+    section.papers li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    a.doi {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.doi:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <a href="index.html" class="back-link">← Back to home</a>
+    <h1>Publications</h1>
+
+    <section class="papers">
+      <h2>Journal Articles</h2>
+      <ul>
+        <li><strong>2024</strong> — <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi-Newton methods in stochastic optimization.</em> <span class="journal">Optimization Methods and Software</span>, <a class="doi" href="https://doi.org/10.1080/10556788.2024.2339226" target="_blank" rel="noopener noreferrer">DOI:10.1080/10556788.2024.2339226</a></li>
+        <li><strong>2022</strong> — <em>Risk optimization using the Chernoff bound and stochastic gradient descent.</em> <span class="journal">Reliability Engineering &amp; System Safety</span>, 223, 108512, <a class="doi" href="https://doi.org/10.1016/j.ress.2022.108512" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.ress.2022.108512</a></li>
+        <li><strong>2020</strong> — <em>Nesterov-aided stochastic gradient methods using Laplace approximation for Bayesian design optimization.</em> <span class="journal">Computer Methods in Applied Mechanics and Engineering</span>, 363, 112909, <a class="doi" href="https://doi.org/10.1016/j.cma.2020.112909" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.cma.2020.112909</a></li>
+        <li><strong>2019</strong> — <em>A stochastic gradient approach for the reliability maximization of passively controlled structures.</em> <span class="journal">Engineering Structures</span>, 186, 1–12, <a class="doi" href="https://doi.org/10.1016/j.engstruct.2019.01.121" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.engstruct.2019.01.121</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html> 

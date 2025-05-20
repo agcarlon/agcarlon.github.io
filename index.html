@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>André Gustavo Carlon</title>
+  <title>André G. Carlon – Postdoc, RWTH Aachen</title>
+  <meta name="description" content="Postdoctoral researcher in uncertainty quantification and stochastic optimization at RWTH Aachen University. Working on optimal experimental design, reliability engineering, and machine learning.">
+  
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="André G. Carlon – Postdoc, RWTH Aachen">
+  <meta property="og:description" content="Postdoctoral researcher in uncertainty quantification and stochastic optimization at RWTH Aachen University.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agcarlon.github.io">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -34,7 +42,7 @@
 
     header {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1.25rem;
@@ -144,6 +152,86 @@
       font-weight: 600;
       font-size: 0.95rem;
     }
+
+    .see-all {
+      margin-top: 1rem;
+      text-align: right;
+    }
+
+    .see-all a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .see-all a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    .contact-links {
+      margin: 1rem 0;
+    }
+
+    .contact-link {
+      color: var(--accent);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: var(--accent);
+    }
+
+    .cv-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .cv-button:hover {
+      background: #0052a3;
+    }
+
+    section.interests ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    section.interests li {
+      background: var(--bg);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -152,12 +240,16 @@
       <div>
         <h1>André Gustavo Carlon</h1>
         <p>MATH4UQ, RWTH-Aachen University</p>
-        <h3 class="subhead">Interests</h3>
-        <ul class="fields">
-          <li>Optimal Experimental Design</li>
-          <li>Stochastic Gradient Descent</li>
-          <li>Reliability Engineering</li>
-        </ul>
+        <div class="contact-links">
+          <a href="mailto:carlon@uq.rwth-aachen.de" class="contact-link">carlon@uq.rwth-aachen.de</a>
+          <div class="social-links">
+            <a href="https://github.com/agcarlon/" target="_blank" rel="noopener noreferrer" title="GitHub">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=LSM7_24AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-6252-0883" target="_blank" rel="noopener noreferrer" title="ORCID">ORCID</a>
+            <a href="https://www.linkedin.com/in/andré-gustavo-carlon-2813b9276" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
+            <a href="cv_carlon.pdf" download title="Download CV">CV</a>
+          </div>
+        </div>
       </div>
       <img src="profile.jpg" alt="Profile photo">
     </header>
@@ -165,6 +257,18 @@
     <section class="about">
       <h2>Bio</h2>
       <p>I'm André Gustavo Carlon, a postdoctoral researcher and stochastic-optimization enthusiast with a Ph.D. in uncertainty quantification. My work sits at the intersection of statistical methodology and real-world applications: I develop and analyze novel stochastic-gradient techniques—variance reduction, optimal preconditioning—to tackle problems in optimal experimental design, reliability-based design optimization, and efficient training of machine-learning models. I also serve as an Associate Editor for <em>Statistics and Computing</em>.</p>
+    </section>
+
+    <section class="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Optimal Experimental Design</li>
+        <li>Stochastic Gradient Descent</li>
+        <li>Reliability Engineering</li>
+        <li>Machine Learning</li>
+        <li>Uncertainty Quantification</li>
+        <li>Bayesian Inference</li>
+      </ul>
     </section>
 
     <section class="experience">
@@ -213,6 +317,7 @@
         <li><strong>2020</strong> — <em>Nesterov-aided stochastic gradient methods using Laplace approximation for Bayesian design optimization.</em> <span class="journal">Computer Methods in Applied Mechanics and Engineering</span>, 363, 112909, <a class="doi" href="https://doi.org/10.1016/j.cma.2020.112909" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.cma.2020.112909</a></li>
         <li><strong>2019</strong> — <em>A stochastic gradient approach for the reliability maximization of passively controlled structures.</em> <span class="journal">Engineering Structures</span>, 186, 1–12, <a class="doi" href="https://doi.org/10.1016/j.engstruct.2019.01.121" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.engstruct.2019.01.121</a></li>
       </ul>
+      <p class="see-all"><a href="publications.html">See all publications →</a></p>
     </section>
 
     <section class="papers">
