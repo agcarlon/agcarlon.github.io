@@ -2,105 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications – André G. Carlon</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    :root {
-      --accent: #0066cc;
-      --bg: #f9fafc;
-      --text: #222;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-
-    .card {
-      max-width: 900px;
-      margin: 3rem auto;
-      background: #fff;
-      padding: 2rem 3rem;
-      border-radius: 18px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: var(--accent);
-    }
-
-    h2 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-      font-size: 1.4rem;
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-      padding-bottom: 0.25rem;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 1.5rem;
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
-    }
-
-    section.papers ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
     section.papers li {
       margin-bottom: 1.5rem;
-      position: relative;
-      padding-left: 1.25rem;
-    }
-
-    section.papers li::before {
-      content: "\2022";
-      position: absolute;
-      left: 0;
-      top: 0.15rem;
-      color: var(--accent);
-      font-size: 1.1rem;
     }
 
     a.doi {
-      text-decoration: none;
-      color: inherit;
       margin-left: 0.5rem;
       font-size: 0.9rem;
-    }
-
-    a.doi:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    .note {
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 2rem;
-      font-style: italic;
-    }
-
-    .author {
-      font-weight: 600;
     }
 
     .corresponding {
@@ -123,14 +43,14 @@
       <h2>Peer-Reviewed Publications</h2>
       <ul>
         <li>
-          <span class="author">Carlon, A. G.</span>*, Espath, L. and Tempone, R. (2024). 
-          <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi-Newton methods in stochastic optimization.</em> 
+          <span class="author">Carlon, A. G.</span>*, Espath, L. and Tempone, R. (2024).
+          <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi-Newton methods in stochastic optimization.</em>
           <span class="journal">Optimization Methods and Software</span>, 39(6), 1352–1382.
           <a class="doi" href="https://doi.org/10.1080/10556788.2024.2339226" target="_blank" rel="noopener noreferrer">DOI:10.1080/10556788.2024.2339226</a>
         </li>
         <li>
-          <span class="author">Carlon, A. G.</span>, Maia, C. D. d. C. D., Lopez, R. H.*, Torii, A. J., and Miguel, L. F. F. (2023). 
-          <em>A polynomial chaos efficient global optimization approach for Bayesian optimal experimental design.</em> 
+          <span class="author">Carlon, A. G.</span>, Maia, C. D. d. C. D., Lopez, R. H.*, Torii, A. J., and Miguel, L. F. F. (2023).
+          <em>A polynomial chaos efficient global optimization approach for Bayesian optimal experimental design.</em>
           <span class="journal">Probabilistic Engineering Mechanics</span>, 72, 103454.
           <a class="doi" href="https://doi.org/10.1016/j.probengmech.2023.103454" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.probengmech.2023.103454</a>
         </li>
@@ -141,8 +61,8 @@
           <a class="doi" href="https://doi.org/10.1016/j.ress.2022.108512" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.ress.2022.108512</a>
         </li>
         <li>
-          <span class="author">Carlon, A. G.</span>*, Torii, A. J., Lopez, R. H., and de Cursi, J. E. S. (2021). 
-          <em>Stochastic gradient descent for risk optimization.</em> 
+          <span class="author">Carlon, A. G.</span>*, Torii, A. J., Lopez, R. H., and de Cursi, J. E. S. (2021).
+          <em>Stochastic gradient descent for risk optimization.</em>
           In Proceedings of the 5th International Symposium on Uncertainty Quantification and Stochastic Modelling: Uncertainties 2020, pages 424–435. Springer International Publishing.
           <a class="doi" href="https://doi.org/10.1007/978-3-030-53669-5_31" target="_blank" rel="noopener noreferrer">DOI:10.1007/978-3-030-53669-5_31</a>
         </li>
@@ -167,9 +87,8 @@
         <li>
           <span class="author">Carlon, A. G.</span>*, Lopez, R. H., and Espath, L. (2017).
           <em>Stochastic optimization for design of experiments.</em>
-          In Proceedings of the XXXVIII Iberian Latin-American Congress on Computational Methods in Engineering. 
+          In Proceedings of the XXXVIII Iberian Latin-American Congress on Computational Methods in Engineering.
           <a class="doi" href="https://doi.org/10.20906/cps/cilamce2017-0149" target="_blank" rel="noopener noreferrer">DOI:10.20906/cps/cilamce2017-0149</a>
-          <!-- no DOI available -->
         </li>
       </ul>
 
@@ -206,14 +125,12 @@
         <li>
           <span class="author">Carlon, A. G.</span>*, Espath, L., and Tempone, R. (2025).
           <em>Efficient stochastic BFGS methods inspired by Bayesian principles.</em>
-          arXiv preprint at<a class="doi" href="https://arxiv.org/abs/2507.07729" target="_blank" rel="noopener noreferrer">arXiv:2507.07729</a>
+          arXiv preprint at <a class="doi" href="https://arxiv.org/abs/2507.07729" target="_blank" rel="noopener noreferrer">arXiv:2507.07729</a>
         </li>
-      </ul>
-      <ul>
         <li>
           Bartuska, A.*, <span class="author">Carlon, A. G.</span>, Espath, L., Krumscheid, S. and Tempone, R. (2024).
           <em>Multilevel randomized quasi-Monte Carlo estimator for nested integration.</em>
-          arXiv preprint at<a class="doi" href="https://arxiv.org/abs/2412.07723" target="_blank" rel="noopener noreferrer">arXiv:2412.07723</a>
+          arXiv preprint at <a class="doi" href="https://arxiv.org/abs/2412.07723" target="_blank" rel="noopener noreferrer">arXiv:2412.07723</a>
         </li>
       </ul>
 

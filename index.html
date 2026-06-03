@@ -2,44 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>André G. Carlon – Postdoc, RWTH Aachen</title>
   <meta name="description" content="Postdoctoral researcher in uncertainty quantification and stochastic optimization at RWTH Aachen University. Working on optimal experimental design, reliability engineering, and stochastic optimization.">
-  
+
   <!-- Open Graph tags -->
   <meta property="og:title" content="André G. Carlon – Postdoc, RWTH Aachen">
   <meta property="og:description" content="Postdoctoral researcher in uncertainty quantification and stochastic optimization at RWTH Aachen University.">
+  <meta property="og:image" content="https://agcarlon.github.io/profile.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://agcarlon.github.io">
-  
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    :root {
-      --accent: #0066cc;
-      --bg: #f9fafc;
-      --text: #222;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-
-    .card {
-      max-width: 900px;
-      margin: 3rem auto;
-      background: #fff;
-      padding: 2rem 3rem;
-      border-radius: 18px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
     header {
       display: flex;
       align-items: flex-start;
@@ -54,26 +36,6 @@
       height: 140px;
       object-fit: cover;
       flex-shrink: 0;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: var(--accent);
-    }
-
-    h2 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-      font-size: 1.4rem;
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-      padding-bottom: 0.25rem;
-    }
-
-    section:first-of-type h2 {
-      margin-top: 0;
     }
 
     h3.subhead {
@@ -97,39 +59,12 @@
       margin-top: 1.5rem;
     }
 
-    section.papers ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    section.papers li {
-      margin-bottom: 0.75rem;
-      position: relative;
-      padding-left: 1.25rem;
-    }
-
-    section.papers li::before {
-      content: "\2022";
-      position: absolute;
-      left: 0;
-      top: 0.15rem;
-      color: var(--accent);
-      font-size: 1.1rem;
-    }
-
-    a.doi {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    a.doi:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
     section {
       margin-top: 1rem;
+    }
+
+    section:first-of-type h2 {
+      margin-top: 0;
     }
 
     section.experience ul {
@@ -232,6 +167,18 @@
       border-radius: 6px;
       font-size: 0.95rem;
     }
+
+    /* Toolkit section overrides */
+    .toolkit-list .toolkit-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .toolkit-list h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
@@ -247,16 +194,16 @@
             <a href="https://scholar.google.com/citations?user=LSM7_24AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">Google Scholar</a>
             <a href="https://orcid.org/0000-0002-6252-0883" target="_blank" rel="noopener noreferrer" title="ORCID">ORCID</a>
             <a href="https://www.linkedin.com/in/andré-gustavo-carlon-2813b9276" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
-            <a href="cv_carlon.pdf" download title="Download CV">CV</a>
+            <a href="cv_carlon.pdf" title="View CV">CV</a>
           </div>
         </div>
       </div>
-      <img src="profile.jpg" alt="Profile photo">
+      <img src="profile.jpg" alt="André Gustavo Carlon">
     </header>
 
     <section class="about">
       <h2>Bio</h2>
-      <p>I’m André Gustavo Carlon, a postdoctoral researcher with a Ph.D. in structural engineering. My work focuses on stochastic optimization, particularly the development and analysis of stochastic gradient methods, including variance reduction and preconditioning techniques. I am interested in applications to optimal experimental design, reliability analysis, and machine learning. I serve as an Associate Editor for Statistics and Computing.
+      <p>I'm André Gustavo Carlon, a postdoctoral researcher with a Ph.D. in structural engineering. My work focuses on stochastic optimization, particularly the development and analysis of stochastic gradient methods, including variance reduction and preconditioning techniques. I am interested in applications to optimal experimental design, reliability analysis, and machine learning. I serve as an Associate Editor for Statistics and Computing.</p>
     </section>
 
     <section class="interests">
@@ -313,8 +260,8 @@
       <h2>Selected Publications</h2>
       <ul>
         <li>
-          <span class="author">Carlon, A. G.</span>*, Espath, L. and Tempone, R. (2024). 
-          <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi-Newton methods in stochastic optimization.</em> 
+          <span class="author">Carlon, A. G.</span>*, Espath, L. and Tempone, R. (2024).
+          <em>Approximating Hessian matrices using Bayesian inference: a new approach for quasi-Newton methods in stochastic optimization.</em>
           <span class="journal">Optimization Methods and Software</span>, 39(6), 1352–1382.
           <a class="doi" href="https://doi.org/10.1080/10556788.2024.2339226" target="_blank" rel="noopener noreferrer">DOI:10.1080/10556788.2024.2339226</a>
         </li>
@@ -340,36 +287,30 @@
       <p class="see-all"><a href="publications.html">See all publications →</a></p>
     </section>
 
-    <section id="toolkits" class="card">
+    <section id="toolkits">
       <h2>Open-Source Libraries</h2>
       <div class="toolkit-list">
-        <!-- MICE Toolkit -->
         <div class="toolkit-item">
           <h3>MICE</h3>
-          <p>A multi‐iteration stochastic estimator (MICE) for stochastic gradient descent.</p>
+          <p>A multi-iteration stochastic estimator (MICE) for stochastic gradient descent.</p>
           <p>
-            <!-- PyPI badge -->
             <a href="https://pypi.org/project/mice/">
               <img src="https://img.shields.io/pypi/v/mice.svg" alt="PyPI version">
             </a>
-            <!-- GitHub link -->
             <a href="https://github.com/agcarlon/mice/">
               <img src="https://img.shields.io/github/stars/agcarlon/mice.svg?label=GitHub%20stars" alt="GitHub stars">
             </a>
           </p>
           <p><strong>Install:</strong> <code>pip install mice</code></p>
         </div>
-    
-        <!-- BayHess Toolkit -->
+
         <div class="toolkit-item">
           <h3>BayHess</h3>
           <p>A quasi-Newton pre-conditioner for stochastic gradient descent based on Bayesian inference.</p>
           <p>
-            <!-- PyPI badge -->
             <a href="https://pypi.org/project/bayhess/">
               <img src="https://img.shields.io/pypi/v/bayhess.svg" alt="PyPI version">
             </a>
-            <!-- GitHub link -->
             <a href="https://github.com/agcarlon/bayhess/">
               <img src="https://img.shields.io/github/stars/agcarlon/bayhess.svg?label=GitHub%20stars" alt="GitHub stars">
             </a>
@@ -382,7 +323,7 @@
     <section class="papers">
       <h2>Organization</h2>
       <ul>
-        <li><strong>2022-2025</strong> — Member of the organization committee of the <a href="https://cemse.kaust.edu.sa/events/by-type/workshop/2025/05/18/stochastic-numerics-and-statistical-learning-theory-and" target="_blank" rel="noopener noreferrer"><em>Statistical Numerics and Statistical Learning workshop</em></a> at KAUST.</li>
+        <li><strong>2022–present</strong> — Member of the organization committee of the <a href="https://cemse.kaust.edu.sa/events/by-type/workshop/2025/05/18/stochastic-numerics-and-statistical-learning-theory-and" target="_blank" rel="noopener noreferrer"><em>Statistical Numerics and Statistical Learning workshop</em></a> at KAUST.</li>
       </ul>
     </section>
   </div>
